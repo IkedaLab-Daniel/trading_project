@@ -1,13 +1,15 @@
 
 import './App.css'
-import Nav from './components/nav'
+import Navigation from './components/Nav.jsx'
 import Hero from './components/Hero'
 import Page1 from './components/Page1'
+import Modal from './components/Modal.jsx'
 function App() {
 
   return (
     <>
-      <Nav />
+      <Modal />
+      <Navigation />
       <Hero />
       <Page1 /> 
     </>

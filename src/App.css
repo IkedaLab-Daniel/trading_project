@@ -110,12 +110,40 @@ nav a:hover:after {
   height: auto;
 }
 
+/*   Modal */
+#modal{
+  color: white;
+  width: 300px;
+  height: auto;
+  position: fixed;
+  background-color: rgba(31, 31, 31, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 20px;
+}
+#modal .close{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 83, 83);
+  transform: 0.5s;
+}
+#modal .close:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+#modal-shadow{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.621);
+}
 /*   MAIN   */
 main{
   display: flex;
   justify-content: center;
   margin: 50px  10vw;
-  width: 100px;
 }
 
 @media only screen and (max-width: 600px) {
