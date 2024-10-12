@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./WE Coin_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE Coin</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/admin/Documents/PRO IT STUFFS/Web Dev/React/trading_project/src/App.css">body {
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0e1427;
+  padding: 10px 10px 10px 10px;
+}
+
+#logo{
+  height: 40px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+nav a {
+  color: #c4c4c4;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 5px;
+  font-size: .8rem;
+  margin-right: 10px;
+}
+nav a:hover {
+  color: #fff;
+}
+nav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #468bf4; /* Blue color for the underline */
+  left: 0;
+  bottom: -5px; /* Adjust the spacing for the underline */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+nav a:hover:after {
+  transform: scaleX(1);
+}
+
+#hero img{
+  width: 100%;
+}
+
+/* CARD */
+.crypto-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.crypto-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  font-family: Arial, sans-serif;
+}
+
+.crypto-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crypto-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.crypto-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.crypto-price {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.crypto-percentage {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.crypto-percentage.positive {
+  color: green;
+}
+
+.crypto-percentage.negative {
+  color: red;
+}
+
+.crypto-chart {
+  margin-top: 10px;
+}
+
+.crypto-chart img {
+  width: 100%;
+  height: auto;
+}
+
+/*   Modal */
+#modal{
+  color: white;
+  width: 300px;
+  height: auto;
+  position: fixed;
+  background-color: rgba(31, 31, 31, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 20px;
+}
+#modal .close{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 83, 83);
+  transform: 0.5s;
+}
+#modal .close:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+#modal-shadow{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.621);
+}
+/*   MAIN   */
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px  10vw;
+}
+
+/* CryptoTable.css */
+.crypto-table {
+  width: 80vw;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.crypto-table img{
+  width: 20px;
+  position: relative;
+  left: -15px;
+  top: 5px;
+}
+
+.crypto-table th, .crypto-table td {
+  padding: 20px 15px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.crypto-table thead {
+  background-color: #f4f4f4;
+  text-align: center;
+  color: #7c7c7c;
+}
+
+.crypto-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.green-text {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.red-text {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.crypto-table th {
+  font-size: 14px;
+}
+
+.crypto-table td {
+  font-size: 1.1rem;
+}
+
+/* Web Info Section */
+#web-info{
+  width: 80vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+#web-info img{
+  width: 120px;
+}
+
+#web-info .element{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 25px;
+}
+
+#web-info .description{
+  color: #434343;
+  font-size: .9rem;
+  line-height: 30px;
+}
+
+#web-info .title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*  Section 2 */
+#section-two{
+  width: 100vw;
+  height: auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  padding: 100px 0;
+}
+
+#section-two p{
+  color: white;
+  font-size: 2.5rem;
+  display: inline-block;
+  margin: 0 0 0 5vw;
+  width: 70%;
+}
+
+#section-two img{
+  width: 30%;
+  margin: 0 5vw 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-left a{
+    font-size: .5rem;
+    margin: 0;
+  }
+  #nav-right{
+    display: none;
+  }
+  #hero img{
+    width: 100%;
+    height: 30vh;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Documents/PRO IT STUFFS/Web Dev/React/trading_project/src/index.css"></style></head>
+  <body>
+    <div id="root"><div id="modal-shadow" style="display: none;"></div><div id="modal" style="display: none;"><p><b>Status:</b> Under development</p><p><b>Total days of development:</b> 1 night</p><p><b>Total Updates:</b> 1 </p><br><p><b>状态</b>：正在开发</p><p><b>开发总天数：</b>1 晚</p><p><b>总更新数:</b> 1 </p><p class="close">Close | 关闭</p></div><img id="logo" src="./WE Coin_files/logo.png" alt=""><nav><div id="nav-left"><a href="http://localhost:5173/#" style="margin-left: 120px;">Exchange</a><a href="http://localhost:5173/#">Contracts</a><a href="http://localhost:5173/#">Option</a><a href="http://localhost:5173/#">My Assets</a><a href="http://localhost:5173/#">Pledge Interest</a><a href="http://localhost:5173/#">BCH</a></div><div id="nav-right"><a href="http://localhost:5173/">Log In</a><a href="http://localhost:5173/">Sign Up</a><a href="http://localhost:5173/">Language</a></div></nav><div id="hero"><img src="./WE Coin_files/171777601230270.png" alt=""></div><main><div class="crypto-cards"><div class="crypto-card"><div class="crypto-header"><img src="./WE Coin_files/Bitcoin.svg" alt="BTC logo" class="crypto-icon"><span class="crypto-name">BTC</span></div><div class="crypto-price">61,918.61 USDT</div><div class="crypto-percentage positive">+1.85%</div><div class="crypto-chart"><img src="./WE Coin_files/samplegraph.png" alt="chart"></div></div><div class="crypto-card"><div class="crypto-header"><img src="./WE Coin_files/Ethereum_logo.svg" alt="ETH logo" class="crypto-icon"><span class="crypto-name">ETH</span></div><div class="crypto-price">2,436.84 USDT</div><div class="crypto-percentage positive">+1.39%</div><div class="crypto-chart"><img src="./WE Coin_files/samplegraph.png" alt="chart"></div></div><div class="crypto-card"><div class="crypto-header"><img src="./WE Coin_files/xrp-xrp-logo.png" alt="XRP logo" class="crypto-icon"><span class="crypto-name">XRP</span></div><div class="crypto-price">0.538 USDT</div><div class="crypto-percentage positive">+0.41%</div><div class="crypto-chart"><img src="./WE Coin_files/samplegraph.png" alt="chart"></div></div><div class="crypto-card"><div class="crypto-header"><img src="./WE Coin_files/litecoin-ltc-logo.png" alt="LTC logo" class="crypto-icon"><span class="crypto-name">LTC</span></div><div class="crypto-price">65.33 USDT</div><div class="crypto-percentage positive">+1.41%</div><div class="crypto-chart"><img src="./WE Coin_files/samplegraph.png" alt="chart"></div></div></div><div><table class="crypto-table"><thead><tr><th>Pair</th><th>Price</th><th>High</th><th>Low</th><th>24H Volume</th></tr></thead><tbody><tr><td><img src="./WE Coin_files/Bitcoin.svg">BTC/<span style="color: grey;">USDT</span></td><td class="green-text">62558.0900</td><td>63380.0000</td><td>62144.0000</td><td>1732.74</td></tr><tr><td><img src="./WE Coin_files/Ethereum_logo.svg">ETH/<span style="color: grey;">USDT</span></td><td class="red-text">2437.0000</td><td>2471.2900</td><td>2433.0000</td><td>5447.89</td></tr><tr><td><img src="./WE Coin_files/xrp-xrp-logo.png">XRP/<span style="color: grey;">USDT</span></td><td class="red-text">0.5372</td><td>0.54180</td><td>0.53635</td><td>7937299.25</td></tr><tr><td><img src="./WE Coin_files/litecoin-ltc-logo.png">LTC/<span style="color: grey;">USDT</span></td><td class="red-text">65.2700</td><td>65.9300</td><td>65.1300</td><td>15597.14</td></tr></tbody></table></div><div><section id="web-info"><div class="element"><img src="./WE Coin_files/secure.svg" alt=""><p class="title">Secure</p><p class="description">Given the sensitive nature of trading and the high value of financial assets, this site prioritizes security. This includes features like two-factor authentication (2FA), encryption, and secure payment gateways.</p></div><div class="element"><img src="./WE Coin_files/analytic.svg" alt=""><p class="title">Analytic Tools</p><p class="description">WeCoin relies on having access to real-time market data. WeCoin provide up-to-the-second data on market prices, volume, trends, and other crucial metrics. Advanced analytics tools, like charting options and technical indicators.</p></div><div class="element"><img src="./WE Coin_files/ui.svg" alt=""><p class="title">Friendly UI</p><p class="description">This site have an intuitive and clean interface. Users, especially beginners, need to be able to navigate easily, find necessary information, and perform transactions without confusion.</p></div><div class="element"><img src="./WE Coin_files/transaction.svg" alt=""><p class="title">Fast Transactions</p><p class="description">Speed is critical in trading, where price fluctuations happen in milliseconds. WeCoin offer fast transaction processing to ensure that buy and sell orders are executed at the desired price points.</p></div></section></div><div><section id="section-two"><p>Unlock secure transactions at your convenience, from any location.</p><img src="./WE Coin_files/laptop.png" alt=""></section></div></main></div>
+    <script type="module" src="./WE Coin_files/main.jsx"></script>
+  
+
+</body></html>

@@ -1,4 +1,9 @@
 import Card from "./Card"
+import CryptoTable from "./CryptoTable";
+import WebInfoSection from "./WebInfoSection";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
+import Footer from "./Footer";
 function Page1(){
     const cryptos = [
     { icon: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg', name: 'BTC', price: 61918.61, percentage: 1.85, currency: 'USDT' },
@@ -21,6 +26,22 @@ function Page1(){
                 />
                 ))}
             </div>
+            <div>
+                <CryptoTable />
+            </div>
+            <div>
+                <WebInfoSection />
+            </div>
+            <div>
+                <Section2 />
+            </div>
+            <div>
+                <Section3 />
+            </div>
+            <div>
+                <Footer />
+            </div>
+            
         </main>
         
     );
