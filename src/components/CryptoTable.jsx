@@ -14,7 +14,7 @@ const CryptoTable = () => {
       <thead>
         <tr>
           <th>Pair</th>
-          <th>Price</th>
+          <th>Price (USDT)</th>
           <th>High</th>
           <th>Low</th>
           <th>24H Volume</th>
